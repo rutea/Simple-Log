@@ -13,17 +13,11 @@
 	<properties>
 		<argLine>-Dfile.encoding=UTF-8</argLine>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-		<junit.version>4.9</junit.version>
 		<hibernate.version>4.2.3.Final</hibernate.version>
 		<spring.version>4.1.6.RELEASE</spring.version>
 		<servlet.version>2.5</servlet.version>
-		<slf4j.version>1.7.6</slf4j.version>
-		<logback.version>1.1.2</logback.version>
 		<mysql.version>5.1.35</mysql.version>
 		<hibernate-validator.version>5.2.4.Final</hibernate-validator.version>
-		<struts2.version>2.3.24.3</struts2.version>
-
-		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 	</properties>
 
 	<dependencies>
@@ -37,6 +31,16 @@
 			<groupId>javax.servlet</groupId>
 			<artifactId>servlet-api</artifactId>
 			<version>${servlet.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>taglibs</groupId>
+			<artifactId>standard</artifactId>
+			<version>1.1.2</version>
+		</dependency>
+		<dependency>
+			<groupId>javax.servlet</groupId>
+			<artifactId>jstl</artifactId>
+			<version>1.2</version>
 		</dependency>
 		<!-- commons -->
 		<dependency>
@@ -151,7 +155,7 @@
 	</dependencies>
 
 	<build>
-		<finalName>test</finalName>
+		<finalName>app</finalName>
 		<resources>
 			<resource>
 				<directory>src/main/resources</directory>
