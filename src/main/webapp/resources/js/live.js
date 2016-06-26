@@ -125,7 +125,7 @@ function addData() {
 		type : "POST",
 		data : $("#editForm").serialize(),
 		dataType : "json",
-		async : true
+		async : false
 	});
 	$("#editDiv").hide();
 	afterEdit();
@@ -188,7 +188,7 @@ function updateData() {
 		type : "POST",
 		data : $("#editForm").serialize(),
 		dataType : "json",
-		async : true
+		async : false
 	});
 	$("#editDiv").hide();
 	afterEdit();
