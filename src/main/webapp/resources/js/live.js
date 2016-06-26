@@ -1,5 +1,9 @@
+var loadOnStart = 0;
+
 $(function() {
-	loadData();
+	if(loadOnStart == 1){
+		loadData();
+	}
 	initFuncs();
 	initDatePicker();
 	rollToButtom();
