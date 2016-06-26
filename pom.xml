@@ -13,24 +13,17 @@
 	<properties>
 		<argLine>-Dfile.encoding=UTF-8</argLine>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-		<hibernate.version>4.2.3.Final</hibernate.version>
 		<spring.version>4.1.6.RELEASE</spring.version>
-		<servlet.version>2.5</servlet.version>
 		<mysql.version>5.1.35</mysql.version>
-		<hibernate-validator.version>5.2.4.Final</hibernate-validator.version>
+		<hibernate.version>4.2.3.Final</hibernate.version>
 	</properties>
 
 	<dependencies>
-		<!-- mysql -->
-		<dependency>
-			<groupId>mysql</groupId>
-			<artifactId>mysql-connector-java</artifactId>
-			<version>${mysql.version}</version>
-		</dependency>
+		<!-- javax -->
 		<dependency>
 			<groupId>javax.servlet</groupId>
 			<artifactId>servlet-api</artifactId>
-			<version>${servlet.version}</version>
+			<version>2.5</version>
 		</dependency>
 		<dependency>
 			<groupId>taglibs</groupId>
@@ -41,6 +34,11 @@
 			<groupId>javax.servlet</groupId>
 			<artifactId>jstl</artifactId>
 			<version>1.2</version>
+		</dependency>
+		<dependency>
+			<groupId>javax.el</groupId>
+			<artifactId>javax.el-api</artifactId>
+			<version>2.2.4</version>
 		</dependency>
 		<!-- commons -->
 		<dependency>
@@ -67,11 +65,6 @@
 			<groupId>commons-collections</groupId>
 			<artifactId>commons-collections</artifactId>
 			<version>3.2.2</version>
-		</dependency>
-		<dependency>
-			<groupId>javax.el</groupId>
-			<artifactId>javax.el-api</artifactId>
-			<version>2.2.4</version>
 		</dependency>
 		<!-- Spring -->
 		<dependency>
@@ -134,6 +127,12 @@
 			<artifactId>spring-test</artifactId>
 			<version>${spring.version}</version>
 			<scope>test</scope>
+		</dependency>
+		<!-- mysql -->
+		<dependency>
+			<groupId>mysql</groupId>
+			<artifactId>mysql-connector-java</artifactId>
+			<version>${mysql.version}</version>
 		</dependency>
 		<!-- hibernate -->
 		<dependency>
